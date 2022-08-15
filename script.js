@@ -26,7 +26,7 @@ Object.prototype.sort = function bubbleSort(callback) {
     let newObj = {}
 
     for (let i = 0; i < keys.length; i++) {
-        newObj[keys[i]]=values[i]   
+        newObj[keys[i]]=values[i]
     }
     return newObj;
 };// https://gist.github.com/PetiDev/c5ce84fc5269bb1bda32c4cbce9391f5
