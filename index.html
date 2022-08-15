@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>SPPG</title>
+</head>
+
+<body>
+    <header>
+        <h1>SPPG</h1>
+        <p><b>S</b>uper <b>P</b>rofessional <b>P</b>ong <b>G</b>ame</p>
+    </header>
+
+    <canvas id="canvas"></canvas>
+    <div>
+        <p><kbd>W</kbd> ball oldal fel</p>
+        <p><kbd>O</kbd> jobb oldal fel</p>
+        <p><kbd>S</kbd> ball oldal le</p>
+        <p><kbd>L</kbd> jobb oldal le</p>
+    </div>
+    <form onsubmit="play(); return false">
+        <label for="username">Felhasználónév:</label>
+        <br>
+        <input placeholder="felhasználónév" autocomplete="off" type="text" id="username" required>
+        <input type="submit" value="play">
+    </form>
+    <ol id="scoreboard">
+
+    </ol>
+    <button onclick="localStorage.clear()">Clear localstorage</button>
+</body>
+
+</html>
